@@ -103,6 +103,7 @@ main {
 
 .box {
 	width: 100%;
+	padding: 3.25rem 5rem;
 	position: relative;
 }
 
@@ -174,7 +175,7 @@ main {
 	display: grid;
 	place-content: center;
 	position: absolute;
-	right: 12rem;
+	right: 10rem;
 	top: 10rem;
 	cursor: pointer;
 	transition: background-color 300ms;
