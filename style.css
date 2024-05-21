@@ -173,7 +173,7 @@ main {
 	display: grid;
 	place-content: center;
 	position: absolute;
-	right: 1rem;
+	right: 0.25rem;
 	top: 6rem;
 	cursor: pointer;
 	transition: background-color 300ms;
@@ -198,7 +198,7 @@ main {
 	font-style: italic;
 	margin-top: 6rem;
 	font-size: 6.5rem;
-	line-height: 1.05;
+	line-height: 1.075;
 	letter-spacing: -0.1rem;
 }
 
