@@ -98,7 +98,7 @@ body {
 }
 
 main {
-	width: min(100% - 3rem, 720px);
+	width: min(100% - 3rem, 740px);
 }
 
 .box {
@@ -114,7 +114,7 @@ main {
 .input {
 	display: flex;
 	flex-direction: column;
-	width: 10.75rem;
+	width: 10.5rem;
 	position: relative;
 }
 
