@@ -217,7 +217,7 @@ main {
 
 .prev-date {
 	position: absolute;
-	top: 2rem;
-	right: 3rem;
+	top: 0;
+	right: 0;
 	font-size: var(--fs-small);
 }
