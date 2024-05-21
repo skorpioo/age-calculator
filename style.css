@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+	--clr-neutral-100: hsl(0 0% 95%);
+	--clr-neutral-300: hsl(0 0% 85%);
+	--clr-neutral-400: hsl(0 0% 75%);
+	--clr-neutral-600: hsl(0 0% 50%);
+	--clr-neutral-900: hsl(0 0% 5%);
+	--clr-accent: hsl(259 100% 65%);
+
+	--fs-small: 0.875rem;
+
+	--input-height: 3rem;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+html {
+	hanging-punctuation: first last;
+}
+
+body {
+	min-height: 100svh;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.5;
+}
+
+img,
+picture,
+svg,
+video {
+	display: block;
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+	line-height: 1.1;
+}
+
+p,
+li {
+	max-width: var(--p-max-width, 65ch);
+	text-wrap: pretty;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+input {
+	background: none;
+	padding: none;
+	border: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	:has(:target) {
+		scroll-behavior: smooth;
+	}
+}
+
+body {
+	background-color: hsl(0, 0%, 92%);
+	display: grid;
+	place-items: center;
+}
+
+.box {
+	width: min(100% - 3rem, 1024px);
+	background-color: var(--clr-neutral-100);
+	border-radius: 1.5rem;
+	border-bottom-right-radius: 10rem;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+	padding: 3.25rem 5rem;
+	position: relative;
+}
+
+.dates {
+	display: flex;
+	gap: 1.5rem;
+	color: var(--clr-neutral-600);
+}
+
+.input {
+	display: flex;
+	flex-direction: column;
+	width: 10.75rem;
+	position: relative;
+}
+
+.input label,
+.prev-date {
+	font-size: var(--fs-small);
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	margin-bottom: 0.35rem;
+}
+
+.input.error label {
+	color: red;
+}
+
+.input input {
+	border: 1px solid var(--clr-neutral-400);
+	border-radius: 0.25em;
+	font-size: 2rem;
+	font-weight: 700;
+	width: 100%;
+	padding: 0.25em 0.75em;
+}
+
+.input input::placeholder {
+	color: var(--clr-neutral-600);
+}
+
+.input input:focus {
+	outline: 1px solid var(--clr-accent);
+}
+
+.input.error input {
+	border: 1px solid red;
+}
+
+.input.error input:focus {
+	outline: 1px solid red;
+}
+
+.input p {
+	font-size: var(--fs-small);
+	color: red;
+	font-style: italic;
+	position: absolute;
+	bottom: -1.75rem;
+	left: 0;
+}
+
+.circle {
+	width: 6rem;
+	aspect-ratio: 1;
+	background-color: var(--clr-accent);
+	border-radius: 50%;
+	display: grid;
+	place-content: center;
+	position: absolute;
+	right: 12rem;
+	top: 12rem;
+	cursor: pointer;
+	transition: background-color 300ms;
+
+	svg g {
+		stroke: var(--clr-neutral-100);
+		transition: stroke 300ms;
+	}
+}
+
+.circle:hover,
+.circle:focus-visible {
+	background-color: var(--clr-neutral-400);
+
+	svg g {
+		stroke: var(--clr-neutral-900);
+	}
+}
+
+.result {
+	font-weight: 900;
+	font-style: italic;
+	margin-top: 6rem;
+	font-size: 6.5rem;
+	line-height: 1.1;
+	letter-spacing: -0.1rem;
+}
+
+.display {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.result-number {
+	color: var(--clr-accent);
+	text-align: right;
+	position: relative;
+	z-index: 1;
+}
+
+.prev-date {
+	position: absolute;
+	top: 2rem;
+	right: 3rem;
+	font-size: var(--fs-small);
+}

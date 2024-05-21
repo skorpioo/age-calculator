@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Age Calculator</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<div class="box">
+			<form class="dates" id="form">
+				<div class="input">
+					<label for="day">Day</label>
+					<input type="text" name="birthday" id="day" placeholder="DD" maxlength="2" autocomplete="off" />
+				</div>
+				<div class="input">
+					<label for="month">Month</label>
+					<input type="text" name="birthday" id="month" placeholder="MM" maxlength="2" autocomplete="off" />
+				</div>
+				<div class="input">
+					<label for="year">Year</label>
+					<input type="text" name="birthday" id="year" placeholder="YYYY" maxlength="4" autocomplete="off" />
+				</div>
+				<button type="submit" class="circle">
+					<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 46 44">
+						<g fill="none" stroke-width="2">
+							<path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+						</g>
+					</svg>
+				</button>
+			</form>
+			<div class="result">
+				<div class="display">
+					<span class="result-number" id="result-year">--</span>
+					<div class="result-text">years</div>
+				</div>
+				<div class="display">
+					<span class="result-number" id="result-month">--</span>
+					<div class="result-text">months</div>
+				</div>
+				<div class="display">
+					<span class="result-number" id="result-day">--</span>
+					<div class="result-text">days</div>
+				</div>
+			</div>
+			<div class="prev-date" id="prev-date"></div>
+		</div>
+	</body>
+</html>
