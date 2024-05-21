@@ -98,12 +98,10 @@ body {
 }
 
 main {
-	width: min(100% - 3rem, 960px);
+	width: min(100% - 3rem, 800px);
 }
 
 .box {
-	width: 100%;
-	padding: 3.25rem 5rem;
 	position: relative;
 }
 
@@ -175,8 +173,8 @@ main {
 	display: grid;
 	place-content: center;
 	position: absolute;
-	right: 10rem;
-	top: 10rem;
+	right: 5rem;
+	top: 7rem;
 	cursor: pointer;
 	transition: background-color 300ms;
 
