@@ -8,7 +8,7 @@
 	--clr-neutral-900: hsl(0 0% 5%);
 	--clr-accent: hsl(259 100% 65%);
 
-	--fs-small: 0.875rem;
+	--fs-small: 0.95rem;
 
 	--input-height: 3rem;
 }
@@ -173,7 +173,7 @@ main {
 	display: grid;
 	place-content: center;
 	position: absolute;
-	right: 0;
+	right: 1rem;
 	top: 6rem;
 	cursor: pointer;
 	transition: background-color 300ms;
@@ -198,7 +198,7 @@ main {
 	font-style: italic;
 	margin-top: 6rem;
 	font-size: 6.5rem;
-	line-height: 1.1;
+	line-height: 1.05;
 	letter-spacing: -0.1rem;
 }
 
@@ -217,7 +217,7 @@ main {
 
 .prev-date {
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 2rem;
+	left: 3rem;
 	font-size: var(--fs-small);
 }
